@@ -38,7 +38,7 @@ PgAdmin 4
 clonare il repository 
 https://github.com/Valeentinazi/SistemiPrenotazioniDB/blob/main/dump.sql
 
-eseguire il dump nek proprio database postegresql
+eseguire il dump nel proprio database postegresql
 
 popolare il db con i dati
 
