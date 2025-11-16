@@ -18,7 +18,7 @@ l’estrazione degli ultimi quattro pagamenti effettuati;
 
 la visualizzazione dei posti disponibili per un determinato treno e data; 
 
-elenco dei biglietti con più tratte.
+gestione di cambi e scali.
 
 # Tecnologie utilizzate 
 PostegreSQL come DBMS
