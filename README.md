@@ -9,10 +9,15 @@ gh repo clone Valeentinazi/SistemiPrenotazioniDB
 
 # Funzionalità supportate
 elenco dei biglietti con più tratte; 
+
 ricerca delle tratte tra due stazioni; 
+
 la verifica della validità di un biglietto; 
+
 l’estrazione degli ultimi quattro pagamenti effettuati; 
+
 la visualizzazione dei posti disponibili per un determinato treno e data; 
+
 elenco dei biglietti con più tratte.
 
 # Tecnologie utilizzate 
@@ -26,11 +31,15 @@ DRAW.IO per la realizzazione di diagrammi E-R
 
 # Requisiti 
 PostegreSQL versione 15 e superiore
+
 PgAdmin 4
 
 # Avvio del progetto
 clonare il repository 
 https://github.com/Valeentinazi/SistemiPrenotazioniDB/blob/main/dump.sql
+
 eseguire il dump nek proprio database postegresql
+
 popolare il db con i dati
+
 utilizzare le query del documento per effettuare interrogazioni e testing
