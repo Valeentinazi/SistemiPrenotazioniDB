@@ -71,19 +71,34 @@ FROM capienza_posti cp
 WHERE cp.id_treno = 9806
 AND cp.data = '2025-11-22';
 
-6.Elenco dei biglietti con più tratte:
+
+6. Gestione di cambi e scali
 
 SELECT 
     b.id_biglietto,
-    b.data_emissione,
-    b.prezzo,
-    COUNT(bl.id) AS numero_tratte
-FROM biglietto b
-JOIN biglietto_linea bl 
-    ON bl.id_biglietto = b.id_biglietto
-GROUP BY 
-    b.id_biglietto, 
-    b.data_emissione, 
-    b.prezzo
-HAVING COUNT(bl.id) > 1;
+    
+    COUNT(bl.id) AS numero_tratte,
+    
+    CASE 
+        WHEN COUNT(bl.id) > 1 THEN COUNT(bl.id) - 1
+        ELSE 0
+    END AS numero_cambi,
 
+    STRING_AGG(
+        CONCAT(
+            'Tratta ', bl.ordine, ': ',
+            p.stazione_partenza, ' → ', p.stazione_arrivo,
+            ' (Treno ', t.numero_treno, ')'
+        ),
+        ' | ' ORDER BY bl.ordine
+    ) AS dettaglio_tratte,
+
+    STRING_AGG(DISTINCT t.numero_treno::text, ', ') AS treni_coinvolti
+
+FROM biglietto b
+JOIN biglietto_linea bl ON bl.id_biglietto = b.id_biglietto
+JOIN percorso p ON p.id = bl.id_percorso
+JOIN treno t ON t.id = bl.id_treno
+
+GROUP BY b.id_biglietto
+ORDER BY b.id_biglietto;
