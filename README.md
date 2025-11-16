@@ -1,8 +1,10 @@
 # SistemiPrenotazioniDB
 SCHEMA DI PERSISTENZA DEI DATI A SUPPORTO DEI SERVIZI DI UN AZIENDA NEL SETTORE DEI TRASPORTI
+
 Questo repository include la struttura di un database relazionale progettato per supportare il processo di vendita,prenotazione,gestione e validazione dei biglietti ferroviari.
 
 # Contenuto
+
 gh repo clone Valeentinazi/SistemiPrenotazioniDB
 
 # Funzionalità supportate
@@ -14,9 +16,12 @@ la visualizzazione dei posti disponibili per un determinato treno e data;
 elenco dei biglietti con più tratte.
 
 # Tecnologie utilizzate 
-PostegreSQL come DBMS 
+PostegreSQL come DBMS
+
 PgAdmin 4 come ambiente grafico 
+
 SQL per l'interrogazione dei dati
+
 DRAW.IO per la realizzazione di diagrammi E-R
 
 # Requisiti 
