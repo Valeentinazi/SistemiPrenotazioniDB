@@ -1,45 +1,45 @@
 # SistemiPrenotazioniDB
-SCHEMA DI PERSISTENZA DEI DATI A SUPPORTO DEI SERVIZI DI UN AZIENDA NEL SETTORE DEI TRASPORTI
+UNO SCHEMA DI PERSISTENZA DEI DATI A SUPPORTO DEI SERVIZI DI UN'AZIENDA NEL SETTORE DEI TRASPORTI
 
-Questo repository include la struttura di un database relazionale progettato per supportare il processo di vendita,prenotazione,gestione e validazione dei biglietti ferroviari.
+Questo repository include la struttura di un database relazionale progettato per ssostenere il processo di prenotazione,vendita,gestione e validazione dei biglietti ferroviari.
 
 # Contenuto
 
 gh repo clone Valeentinazi/SistemiPrenotazioniDB
 
 # Funzionalità supportate
-elenco dei biglietti con più tratte; 
+1.elenco dei biglietti con più tratte; 
 
-ricerca delle tratte tra due stazioni; 
+2.ricerca delle tratte tra due stazioni; 
 
-la verifica della validità di un biglietto; 
+3.la verifica della validità di un biglietto; 
 
-l’estrazione degli ultimi quattro pagamenti effettuati; 
+4.l’estrazione degli ultimi quattro pagamenti effettuati; 
 
-la visualizzazione dei posti disponibili per un determinato treno e data; 
+5.la visualizzazione dei posti disponibili per un determinato treno e data; 
 
-gestione di cambi e scali.
+6.gestione di cambi e scali.
 
-# Tecnologie utilizzate 
+# Know-how utilizzate 
 PostegreSQL come DBMS
 
-PgAdmin 4 come ambiente grafico 
+PgAdmin 4 strumento utilizzato come interfaccia grafica
 
-SQL per l'interrogazione dei dati
+SQL come linguaggio per l'interrogazione dei dati
 
 DRAW.IO per la realizzazione di diagrammi E-R
 
-# Requisiti 
-PostegreSQL versione 15 e superiore
+# Capacità
+PostegreSQL versione 15 o superiore
 
 PgAdmin 4
 
 # Avvio del progetto
-clonare il repository 
+1.clonare il repository sotto riportato :
 https://github.com/Valeentinazi/SistemiPrenotazioniDB/blob/main/dump.sql
 
-eseguire il dump nel proprio database postegresql
+2.eseguire il dump nel proprio database postegresql
 
-popolare il db con i dati
+3.popolare il db con i dati
 
-utilizzare le query del documento per effettuare interrogazioni e testing
+4.utilizzare le query del documento per effettuare interrogazioni e testing
